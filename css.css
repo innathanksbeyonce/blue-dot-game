@@ -1,0 +1,74 @@
+/* Apply Proxima Nova font */
+body {
+    margin: 0;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    background-color: white;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Warning Text */
+#warning-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Recipe Text */
+#recipe-container {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto;
+    display: none; /* Hidden initially */
+}
+
+/* Blue Dot */
+#blue-dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #1302FF;
+    border-radius: 50%;
+    display: none; /* Hidden initially */
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+/* "You Lost" Screen */
+#you-lost-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1302FF;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0; /* Initially hidden */
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
